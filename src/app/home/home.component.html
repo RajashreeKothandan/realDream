@@ -3,7 +3,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,20 +37,21 @@
 <link rel="stylesheet" href="../../assets/css/responsive.css">
 <script src="../../assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body>
+<body class="loaded">
 <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <div class="">
 <div class="spinner"></div>
 </div>
-<header id="header" class="header-section">
+<header id="header" class="header-section fadeIn animated cssanimation">
 <div class="top-header">
 <div class="container">
 <div class="top-content-wrap row">
 <div class="col-sm-8">
 <ul class="left-info">
-<li><a href="#"><i class="ti-email"></i><span class="__cf_email__" data-cfemail="337a5d555c736a5c4641775c5e525a5d1d505c5e">[email&#160;protected]</span></a></li>
+<!-- <li><a href="#"><i class="ti-email"></i><span class="__cf_email__" data-cfemail="337a5d555c736a5c4641775c5e525a5d1d505c5e">[email&#160;protected]</span></a></li> -->
+<li><a href="#"><i class="ti-email"></i>Info@YourDomain.com</a></li>
 <li><a href="#"><i class="ti-mobile"></i>+(333) 052 39876</a></li>
 </ul>
 </div>
@@ -71,9 +72,9 @@
 <div class="bottom-content-wrap row">
 <div class="col-sm-4">
 <div class="site-branding">
-<a href="#"><img src="https://html.dynamiclayers.net/dl/charitify/img/logo.png" alt="Brand"></a>
+    <a href="#"><img src="https://html.dynamiclayers.net/dl/charitify/img/logo.png" alt="Brand"></a>
 </div>
-</div>
+</div> 
 <div class="col-sm-8 text-right">
 <ul id="mainmenu" class="nav navbar-nav nav-menu">
 <li class="active"> <a routerLink="" style="color: #f8b864;">Home</a>
@@ -114,21 +115,23 @@
 <section class="slider-section">
 <div class="slider-wrapper">
 <div id="main-slider" class="nivoSlider">
-<img src="https://html.dynamiclayers.net/dl/charitify/img/slider-1.jpg" alt="" title="#slider-caption-1" />
-<img src="https://html.dynamiclayers.net/dl/charitify/img/slider-2.jpg" alt="" title="#slider-caption-2" />
-<img src="https://html.dynamiclayers.net/dl/charitify/img/slider-3.jpg" alt="" title="#slider-caption-3" />
+     
+<img src="https://html.dynamiclayers.net/dl/charitify/img/slider-1.jpg" alt="" title="#slider-caption-1" style="width:1349;visibility:hidden;" />
+<img src="https://html.dynamiclayers.net/dl/charitify/img/slider-2.jpg" alt="" title="#slider-caption-2" style="width:1349;visibility:hidden;"  />
+<img src="https://html.dynamiclayers.net/dl/charitify/img/slider-3.jpg" alt="" title="#slider-caption-3" style="width:1349;visibility:hidden;"  />
 <img class="nivo-main-image" src="https://html.dynamiclayers.net/dl/charitify/img/slider-3.jpg" style="display: inline; height: 568px; width: 1349px;">
-<div class="nivo-caption" style="display: block;">
+<script type="text/javascript">$(window).load(function(){$('#main-slider').nivoSlider();})</script>
+ <div class="nivo-caption" style="display: block;">
 
     <div class="display-table">
     <div class="table-cell">
     <div class="container">
     <div class="slider-text">
-        <h5 class="wow cssanimation fadeInBottom  animated" style="visibility: visible; animation-name: bfadeInBottom;">Join Us Today</h5>
+        <h5 class="wow cssanimation fadeInBottom  animated" style="visibility: visible; animation-name: none;">Join Us Today</h5>
         <h1 class="wow cssanimation leFadeInRight sequence animated animated" style="visibility: visible;"></h1>
-        <p class="wow cssanimation fadeInTop  animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: bfadeInTop;">Help today because tomorrow you may be the one who needs helping! <br>Forget what you can get and see what you can give.</p>
-        <a href="#" class="default-btn wow cssanimation fadeInBottom  animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bfadeInBottom;">Join With Us</a>
-        <a href="#" class="default-btn wow cssanimation fadeInBottom  animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bfadeInBottom;">Donet Now</a>
+        <p class="wow cssanimation fadeInTop  animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: bfadeInTop;">Dream is not the thing you see in sleep <br>but is that thing that doesn't let you sleep<br>-Dr.APJ Abdul Kalam.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_vJfVqhNf_FfocyECZ8ZZAvPS6zYymI4Xw29TgI3lCQFH-g/viewform" target="_blank" class="default-btn wow cssanimation fadeInBottom  animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bfadeInBottom;">Join With Us</a>
+        <a href="#" class="default-btn wow cssanimation fadeInBottom  animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bfadeInBottom;">Donate Now</a>
     </div>
     
 </div>
@@ -137,19 +140,21 @@
 </div>
 <div class="nivo-directionNav">
     <a class="nivo-prevNav">
-    <i class="ti-arrow-left"></i></a>
-    <a class="nivo-nextNav"><i class="ti-arrow-right"></i></a></div>
+    <!-- <i class="ti-arrow-left"></i> -->
+</a>
+    <a class="nivo-nextNav"></a></div>
+    <!-- <i class="ti-arrow-right"></i> -->
 </div>
-<div id="slider-caption-1" class="nivo-html-caption slider-caption">
+ <div id="slider-caption-1" class="nivo-html-caption slider-caption">
 <div class="display-table">
 <div class="table-cell">
 <div class="container">
 <div class="slider-text">
 <h5 class="wow cssanimation fadeInBottom">Join Us Today</h5>
 <h1 class="wow cssanimation leFadeInRight sequence">Better Life for People</h1>
-<p class="wow cssanimation fadeInTop" data-wow-delay="1s">Help today because tomorrow you may be the one who needs helping! <br>Forget what you can get and see what you can give.</p>
+<p class="wow cssanimation fadeInTop" data-wow-delay="1s">Dream is not the thing you see in sleep <br>but is that thing that doesn't let you sleep<br> Dr.APJ Abdul Kalam.</p>
 <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Join With Us</a>
-<a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donet Now</a>
+<a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donate Now</a>
 </div>
 </div>
 </div>
@@ -162,8 +167,8 @@
 <div class="slider-text">
 <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms">Together we <br>can make a Difference</h1>
 <p class="wow cssanimation fadeInBottom" data-wow-delay="1s">Help today because tomorrow you may be the one who needs helping! <br>Forget what you can get and see what you can give.</p>
-<a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Join With Us</a>
-<a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donet Now</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd_vJfVqhNf_FfocyECZ8ZZAvPS6zYymI4Xw29TgI3lCQFH-g/viewform" target="_blank" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Join With Us</a>
+<a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donate Now</a>
 </div>
 </div>
 </div>
@@ -707,5 +712,8 @@
 <script src="../../assets/js/contact.js"></script>
 
 <script src="../../assets/js/main.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </body>
 </html>
