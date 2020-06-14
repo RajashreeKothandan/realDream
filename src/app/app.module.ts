@@ -10,6 +10,7 @@ import { ServiceComponent } from './service/service.component';
 import { BlogComponent } from './blog/blog.component';
 import { EventComponent } from './event/event.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     ServiceComponent,
     BlogComponent,
     EventComponent,
-    GalleryComponent,routingComponents
+    GalleryComponent,routingComponents, HeaderComponent
   ],
   imports: [
     BrowserModule,

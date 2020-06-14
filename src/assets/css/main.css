@@ -427,6 +427,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     text-transform: uppercase;
     display: inline-block;
     font-size: 12px;
+    cursor:pointer;
 }
 #mainmenu li a:hover{
     color: #f8b864;
@@ -1277,6 +1278,9 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 .breadcrumb li a:hover{
     text-decoration: underline;
+}
+#mainmenu li a.active{
+    color: #f8b864; 
 }
 .breadcrumb .active{
     color: #f8b864;
