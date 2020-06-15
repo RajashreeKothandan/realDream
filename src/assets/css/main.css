@@ -667,7 +667,9 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     border: none;
 }
 .promo-content{
-    border-right: 1px dashed #ddd;
+    /* border-right: 1px dashed #ddd;  removed purposefully */
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px #f8b864;
 }
 .promo-content img{
     margin-bottom: 15px;
