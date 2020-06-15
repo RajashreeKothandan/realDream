@@ -133,7 +133,7 @@
 </div>
 <div class="col-md-6 xs-padding">
 <div class="about-content">
-<h2>You are definitely intrigued to <br> discover who we are.</h2>
+<h2>WHO WE ARE</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only centuries, but also the electronic more typesetting, remaining essentially unchanged.Nullam id dolor ultricies vehicula ut id elit.</p>
 
 </div>
@@ -141,15 +141,56 @@
 </div>
 </div>
 </section>
+<section class="about-section bg-grey bd-bottom padding">
+    <div class="container">
+    <div class="row about-wrap">
+        <div class="col-md-6 xs-padding">
+            <div class="about-content">
+            <h2>WHAT WE DO </h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only centuries, but also the electronic more typesetting, remaining essentially unchanged.Nullam id dolor ultricies vehicula ut id elit.</p>
+            
+            </div>
+            </div>
+    <div class="col-md-6 xs-padding">
+    <div class="about-image">
+    <img src="../../assets/img/about.jpg" alt="about image">
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </section>
+    <section class="team-section bd-bottom padding">
+        <div class="container">
+        <div class="section-heading text-center mb-40">
+        <h2>OUR HISTORY</h2>
+ </div>
+        </div>
+        </section>
 <section class="team-section bd-bottom padding">
 <div class="container">
-<div class="section-heading text-center mb-40">
-<h2>Meet Out Volunteers</h2>
-<span class="heading-border"></span>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> It has survived not only five centuries.</p>
-</div>
-<div class="team-wrapper row">
-<div class="col-lg-6 sm-padding">
+    <div class="section-heading text-center mb-40">
+        <h2>OUR HISTORY</h2>
+        <span class="heading-border"></span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> It has survived not only five centuries.</p>
+        </div>
+ <div class="team-wrapper row">
+    <div>Some tags before</div>
+    <owl-carousel-o [options]="customOptions">
+ 
+    <ng-container *ngFor="let slide of apiData">
+      <ng-template carouselSlide [dotContent]="slide.content" [id]="slide.id">
+          <div>
+            <img [src]="slide.url" [alt]="slide.alt" [title]="slide.title">
+            <span>{{slide.content}}</span>
+          </div>
+        
+      </ng-template>
+    </ng-container>
+ 
+  </owl-carousel-o>
+  <div>Some tags after</div>
+<!--<div class="col-lg-6 sm-padding">
 <div class="team-wrap row">
 <div class="col-md-6">
 <div class="team-details">
@@ -201,8 +242,8 @@
 </ul>
 <a href="#" class="default-btn">Join With Us</a>
 </div>
-</div>
-</div>
+</div>-->
+</div> 
 </div>
 </section><!--
 <section id="counter" class="counter-section">

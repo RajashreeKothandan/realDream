@@ -12,6 +12,11 @@ import { EventComponent } from './event/event.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './header/header.component';
 
+// Import the library
+import { CarouselModule } from 'ngx-owl-carousel-o';
+// Needs to import the BrowserAnimationsModule
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,10 +27,13 @@ import { HeaderComponent } from './header/header.component';
     BlogComponent,
     EventComponent,
     GalleryComponent,routingComponents, HeaderComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
