@@ -1,0 +1,65 @@
+[
+    {
+    "img":"../../assets/img/post-1.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 1",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+},
+{
+    "img":"../../assets/img/post-2.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 2",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+}   
+,
+{
+    "img":"../../assets/img/post-3.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 3",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+},
+{
+    "img":"../../assets/img/post-4.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 4",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+},{
+    "img":"../../assets/img/post-5.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 5",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+},{
+    "img":"../../assets/img/post-6.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 6",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+},
+{
+    "img":"../../assets/img/post-6.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 6",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+},
+{
+    "img":"../../assets/img/post-6.jpg",
+    "alt":"post-1",
+    "date":"January 01.2018",
+    "headers":"Standard gallery post 6",
+    "details":"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    
+}
+
+]

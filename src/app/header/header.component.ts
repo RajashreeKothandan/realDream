@@ -28,12 +28,12 @@ header:string;
       
       
       break;}
-      case 'id_service': {
-      this._router.navigate(['/services']);
+      case 'id_gallery': {
+      this._router.navigate(['/gallery']);
       
       break;}
-      case 'id_activity': {
-      this._router.navigate(['/activities']);
+      case 'id_service': {
+      this._router.navigate(['/services']);
     
       break;}
       case 'id_contact': {
@@ -47,7 +47,7 @@ header:string;
 document.getElementById("id_home").classList.remove("active");
 document.getElementById("id_about").classList.remove("active");
 document.getElementById("id_service").classList.remove("active");
-document.getElementById("id_activity").classList.remove("active");
+document.getElementById("id_gallery").classList.remove("active");
 document.getElementById("id_contact").classList.remove("active");
   }
   AddActive(id:string){
