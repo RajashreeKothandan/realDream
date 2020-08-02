@@ -45,7 +45,6 @@ header:string;
   }
   RemoveActive(){
 document.getElementById("id_home").classList.remove("active");
-document.getElementById("id_about").classList.remove("active");
 document.getElementById("id_service").classList.remove("active");
 document.getElementById("id_gallery").classList.remove("active");
 document.getElementById("id_contact").classList.remove("active");

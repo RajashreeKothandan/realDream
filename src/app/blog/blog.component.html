@@ -147,13 +147,13 @@
 </ul> -->
 </div>
 <div class="sidebar-widget mb-50">
-<h4>Recent Posts</h4>
+<h4>Our Services</h4>
 <ul class="recent-posts">
-<li *ngFor="let sidebar of sidebarDetails"  (click)="LoadPage(sidebar.mainpage,$event)">
-<img [src]="sidebar.img" alt="sidebar.alt">
+<li style="cursor:pointer" *ngFor="let sidebar of sidebarDetails"  (click)="LoadPage(sidebar.name,$event)">
+<!-- <img [src]="sidebar.img" alt="sidebar.alt"> -->
 <div>
 <h4> {{sidebar.name}} </h4>
-<span class="date"><i class="fa fa-clock-o"></i> {{sidebar.date}}</span>
+<span class="date"><i class="fa fa-clock-o"></i> {{sidebar.description}}</span>
 </div>
 </li>
 
@@ -176,7 +176,7 @@
 </div>
 <div class="col-md-9 xs-padding">
 <div class="blog-items row">
-<div class="col-md-6 padding-15" *ngFor="let post of mainPageDetails">
+<!-- <div class="col-md-6 padding-15" *ngFor="let post of mainPageDetails">
 <div class="blog-post">
 <img [src]="post.img" alt="post.alt">
 <div class="blog-content">
@@ -185,7 +185,17 @@
 <p>{{post.details}}</p>
 </div>
 </div>
-</div>
+</div> -->
+<div class="col-md-9 padding-15">
+    <div class="blog-post">
+    <img [src]="currentService.img" alt="blog post">
+    <div class="blog-content">
+    <h3>{{currentService.ServiceName}}</h3>
+    <p>{{currentService.SubTitle}}</p>    
+    <p *ngFor="let step of currentService.Steps">{{step}}</p>    
+    </div>
+    </div>
+    </div>
 <!-- <div class="col-md-6 padding-15">
 <div class="blog-post">
 <img src="../../assets/img/post-2.jpg" alt="blog post">

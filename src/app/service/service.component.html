@@ -126,27 +126,27 @@
 <section class="causes-section bg-grey bd-bottom padding">
 <div class="container">
 <div class="causes-wrap row">
-<div class="col-md-4 padding-15">
+<div *ngFor="let detail of GalleryDetails"class="col-md-4 padding-15">
 <div class="causes-content">
 <div class="causes-thumb">
-<img src="../../assets/img/causes-1.jpg" alt="causes">
-<a href="#" class="donate-btn">Donate Now<i class="ti-plus"></i></a>
-<div class="progress">
+<img [src]="detail.img" alt="causes">
+<!-- <a href="#" class="donate-btn">Donate Now<i class="ti-plus"></i></a> -->
+<!-- <div class="progress">
 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span class="wow cssanimation fadeInLeft">25%</span></div>
-</div>
+</div> -->
 </div>
 <div class="causes-details">
-<h3>First charity activity of this summer.</h3>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<h3>{{detail.Title}}</h3>
+<p>{{detail.Description}}</p>
 <div class="donation-box">
-<p><i class="ti-bar-chart"></i>Goal: $450000</p>
-<p><i class="ti-thumb-up"></i>Raised: $55000</p>
+<p><i class="ti-bar-chart"></i>{{detail.Date}}</p>
+<p><i class="ti-thumb-up"></i>{{detail.Location}}</p>
 </div>
-<a href="#" class="read-more">Read More</a>
+<!-- <a href="#" class="read-more">Read More</a> -->
 </div>
 </div>
 </div>
-<div class="col-md-4 padding-15">
+<!-- <div class="col-md-4 padding-15">
 <div class="causes-content">
 <div class="causes-thumb">
 <img src="../../assets/img/causes-2.jpg" alt="causes">
@@ -245,7 +245,7 @@
 <a href="#" class="read-more">Read More</a>
 </div>
 </div>
-</div>
+</div> -->
 </div>
 </div>
 </section>

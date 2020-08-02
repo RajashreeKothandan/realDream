@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-service',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent implements OnInit {
+  GalleryDetails:any;
+  constructor(private http:HttpClient) { 
 
-  constructor() { }
+     this.http.get("../../assets/Data/GalleryDetails.json").subscribe(
+       data=>{this.GalleryDetails=data;})
+  }
 
   ngOnInit() {
   }

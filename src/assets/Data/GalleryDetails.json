@@ -1,0 +1,41 @@
+[{
+    "Title":"Event 1",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Date":"January 01.2018",
+    "Location":"Lorem Ipsum",
+    "img":"../../assets/img/causes-1.jpg"
+},
+{
+    "Title":"Event 2",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Date":"January 02.2018",
+    "Location":"Lorem Ipsum",
+    "img":"../../assets/img/causes-2.jpg"
+},
+{
+    "Title":"Event 3",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Date":"January 03.2018",
+    "Location":"Lorem Ipsum",
+    "img":"../../assets/img/causes-3.jpg"
+},
+{
+    "Title":"Event 4",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Date":"January 04.2018",
+    "Location":"Lorem Ipsum",
+    "img":"../../assets/img/causes-4.jpg"
+},{
+    "Title":"Event 5",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Date":"January 05.2018",
+    "Location":"Lorem Ipsum",
+    "img":"../../assets/img/causes-5.jpg"
+},
+{
+    "Title":"Event 6",
+    "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "Date":"January 06.2018",
+    "Location":"Lorem Ipsum",
+    "img":"../../assets/img/causes-6.jpg"
+}]

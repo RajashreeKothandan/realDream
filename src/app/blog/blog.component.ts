@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from 'rxjs';
+//import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
+import {service} from './../Models/Service';
 
 
 @Component({
@@ -11,11 +12,12 @@ import {HttpClient} from '@angular/common/http';
 export class BlogComponent implements OnInit {
 
   sidebarDetails:any;
-  mainPageDetails:any;
+  mainPageDetails:service[];
+  currentService:service;
   constructor(private http:HttpClient){
    
     this.http.get("../../assets/Data/sidebar.json").subscribe(data=>{this.sidebarDetails=data;})
-   this.LoadPage("EventOne",Event);
+   this.LoadPage("Sponsorship",Event);
     }
   
   ngOnInit() {
@@ -23,11 +25,13 @@ export class BlogComponent implements OnInit {
   }
   
   
-  LoadPage(eventName:string,event:any){
-   console.log(eventName);
-   var url="../../assets/Data/"+eventName+".json";
+  LoadPage(ServiceName:string,event:any){
+   console.log(ServiceName);
+   var url="../../assets/Data/Services.json";
    this.http.get(url).subscribe(
-     data=>{this.mainPageDetails=data;})
+     data=>{this.mainPageDetails=<service[]>data;
+      this.currentService=this.mainPageDetails.find(x=>x.ServiceName==ServiceName);
+    })
    
   }
    

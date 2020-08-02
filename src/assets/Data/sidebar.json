@@ -1,35 +1,34 @@
 [{
-    "name": "Event 1",
-    "img": "../../assets/img/rel-post-1.jpg",
-    "alt": "Event1",
+    "name": "Sponsorship",
+
+    "description": "Event1",
     "date": "Jan 10 2020",
     "mainpage":"EventOne"
   },
   {
-    "name": "Event 2",
-    "img": "../../assets/img/rel-post-2.jpg",
-    "alt": "Event2",
+    "name": "Workshops",
+
+    "description": "Event2",
     "date": "Feb 10 1996",
     "mainpage":"EventTwo"
   }
   ,{
-    "name": "Event 3",
-    "img": "../../assets/img/rel-post-3.jpg",
-    "alt": "Event3",
+    "name": "Programs",
+
+    "description": "Event3",
     "date": "Feb 24 2018",
     "mainpage":"EventThree"
   },
   {
-    "name": "Event 4",
-    "img": "../../assets/img/rel-post-4.jpg",
-    "alt": "Event4",
+    "name": "Information Center",
+
+    "description": "Event4",
     "date": "Apr 14 2018",
     "mainpage":"EventFour"
   },
   {
-    "name": "Event 5",
-    "img": "../../assets/img/rel-post-5.jpg",
-    "alt": "Event5",
+    "name": "eBooks",    
+    "description": "Event5",
     "date": "Oct 6 2018",
     "mainpage":"EventFive"
   }]

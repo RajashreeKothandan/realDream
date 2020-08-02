@@ -1864,7 +1864,7 @@ span.date{
 .recent-posts{}
 .recent-posts li{
     position: relative;
-    padding-left: 90px;
+    /* padding-left: 90px; */
     display: flex;
     align-items: center;
     min-height: 50px;

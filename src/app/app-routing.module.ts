@@ -12,9 +12,9 @@ import{BlogComponent} from '../app/blog/blog.component'
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
-  {path:'about',component:AboutComponent},
-  {path:'gallery',component:BlogComponent},
-  {path:'services',component:ServiceComponent},
+  // {path:'about',component:AboutComponent},
+  {path:'gallery',component:ServiceComponent},
+  {path:'services',component:BlogComponent},
   {path:'donate',component:AboutComponent},
   {path:'contact',component:ContactComponent},
  { path: '**',   redirectTo: ''}
