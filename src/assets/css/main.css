@@ -2056,4 +2056,10 @@ span.date{
     background-color: #ffb451;
     color: #fff;
 }
-
+/* Logo border shadow css */
+.site-branding img{ -moz-box-shadow: 0px 0px 10px 5px #ccc;
+    -webkit-box-shadow: 0px 0px 10px 5px #ccc;
+    box-shadow: 0px 0px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:100px;
+    border-radius:100px;}
