@@ -2063,3 +2063,5 @@ span.date{
     -moz-border-radius:25px;
     -webkit-border-radius:100px;
     border-radius:100px;}
+ /* Give padding to home boxes (recent contributors and activities) */
+    .promo-content{padding : 5%;}
