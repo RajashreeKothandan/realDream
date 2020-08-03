@@ -120,8 +120,11 @@
 <img src="../../assets/img/slider-1.jpg" alt="" title="#slider-caption-1" style="width:1349;visibility:hidden;" />
 <img src="../../assets/img/slider-2.jpg" alt="" title="#slider-caption-2" style="width:1349;visibility:hidden;"  />
 <img src="../../assets/img/slider-3.jpg" alt="" title="#slider-caption-3" style="width:1349;visibility:hidden;"  />
+
 <img class="nivo-main-image" src="../../assets/img/slider-3.jpg" style="display: inline; height: 568px; width: 1349px;">
-<script type="text/javascript">$(window).load(function(){$('#main-slider').nivoSlider();})</script>
+<script type="text/javascript">$(window).load(function(){$(window).load(function() {
+    $('#main-slider').nivoSlider();
+});})</script>
  <div class="nivo-caption" style="display: block;">
 
     <div class="display-table">
@@ -153,7 +156,7 @@
 <div class="container">
 <div class="slider-text">
 <h5 class="wow cssanimation fadeInBottom">Join Us Today</h5>
-<h1 class="wow cssanimation leFadeInRight sequence">Better Life for People</h1>
+<h1 class="wow cssanimation leFadeInRight sequence"  data-wow-delay="0.5s">Better Life for People</h1>
 <p class="wow cssanimation fadeInTop" data-wow-delay="1s">Dream is not the thing you see in sleep <br>but is that thing that doesn't let you sleep<br> Dr.APJ Abdul Kalam.</p>
 <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Join With Us</a>
 <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donate Now</a>
@@ -200,9 +203,10 @@
 <div class="col-md-6 col-sm-6 xs-padding">
 <div class="promo-content">
 <!-- <img src="../../assets/img/view.png" alt="prmo icon"> -->
-<h3  style="padding: 10px;">Recent Activity</h3>
+<h3  style="padding: 10px;">Recent Supporters</h3>
 <div>
-    <p *ngFor="let activity of recentActivity">* {{activity.details}}</p>
+    <marquee direction="up" height="120" scrollAmount="3"> 
+    <p *ngFor="let activity of recentActivity">*  {{activity.details}}</p></marquee>
 </div>
 
 <!-- <a href="#">Read More</a> -->
@@ -211,8 +215,10 @@
 <div class="col-md-6 col-sm-6 xs-padding">
 <div class="promo-content">
 <!-- <img src="../../assets/img/mission.png" alt="prmo icon"> -->
-<h3 style="padding: 10px;">Upcoming Activity</h3>
-<p *ngFor="let activity of upcomingActivity">* {{activity.details}}</p>
+<h3 style="padding: 10px;">Recent Activities</h3>
+<marquee direction="up" height="120" scrollAmount="1"> 
+<p *ngFor="let activity of upcomingActivity">*  {{activity.details}}</p>
+</marquee>
 <!-- <a href="#">Read More</a> -->
 </div>
 </div>
@@ -232,7 +238,7 @@
     <div class="col-md-6 xs-padding">
     <div class="about-content">
     <h2>WHO WE ARE</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only centuries, but also the electronic more typesetting, remaining essentially unchanged.Nullam id dolor ultricies vehicula ut id elit.</p>
+    <p>Real Dream Trust(RD Trust) is a Public Charitable Trust. RD was started to help needy students on September 2010 by a group of volunteers from Anderson Higher Secondary School, Kanchipuram. The passion of educating needy grew and we have registered the group as trust in July 15, 2015 under Indian Trust Act, 1882.</p>
     
     </div>
     </div>
@@ -245,7 +251,7 @@
             <div class="col-md-6 xs-padding">
                 <div class="about-content">
                 <h2>WHAT WE DO </h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only centuries, but also the electronic more typesetting, remaining essentially unchanged.Nullam id dolor ultricies vehicula ut id elit.</p>
+                <p>We sponsor meritorious students and assistance-needed students. We provide academic assitance, moral guidance sessions to the students. We create awareness on healthcare, career and course environment. We Volunteer and support people during natural disasters.</p>
                 
                 </div>
                 </div>
@@ -791,6 +797,7 @@
 </div>
 </section> -->
 <!-- <app-contact id="contact"></app-contact>
+    -->
 <footer class="footer-section">
 <div class="container">
 <div class="row">
@@ -806,9 +813,9 @@
 </div>
 </div>
 </div>
-</footer> -->
+</footer> 
 <a data-scroll="" href="#header" id="scroll-to-top" style="display: block;"><i class="arrow_up"></i></a>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../assets/js/vendor/jquery-1.12.4.min.js"></script>
 
 <script src="../../assets/js/vendor/bootstrap.min.js"></script>
@@ -833,6 +840,7 @@
 
 <script src="../../assets/js/vendor/jquery.slicknav.min.js"></script>
 
+
 <script src="../../assets/js/vendor/jquery.nivo.slider.pack.js"></script>
 
 <script src="../../assets/js/vendor/letteranimation.min.js"></script>
@@ -843,7 +851,7 @@
 
 <script src="../../assets/js/main.js"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 
 </body>
 </html>
