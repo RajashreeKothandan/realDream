@@ -1,5 +1,6 @@
 .bottom-header{background-color:#000}
-.container,.header-height{height:6em !important;}
+.container .bottom-content-wrap{height:6em !important;}
 .bottom-content-wrap{align-items: flex-start !important;}
 .top-header{height:3em;}
 .top-content-wrap i{color:#f8b864 !important;}
+.nav-menu a,.default-btn {font-size: 1.1em !important;}
